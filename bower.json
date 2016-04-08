@@ -1,0 +1,22 @@
+{
+  "name": "01_socket",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Yoshizumi Ashikawa <gollowars>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./server/js/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}

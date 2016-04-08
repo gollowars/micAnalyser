@@ -1,0 +1,110 @@
+//====================
+// Header
+//====
+#header
+  center($headerWidth)
+  min-width: $headerWidth
+  padding-top: 27px
+  .lang-switch
+    text-align: right
+    margin-right: -6px
+    a
+      display: inline-block
+      height: 0
+      overflow: hidden 
+      padding: 12px 10px 0
+      background-repeat: no-repeat
+      background-position: center center
+      cursor: pointer
+    .lang-jp
+      width: 16px
+      background-image: url("/assets/images/btn_lang_jp_off.gif")
+      border-right: solid 1px $baseFontColor
+    .lang-en
+      width: 18px
+      background-image: url("/assets/images/btn_lang_en_off.gif")
+      cursor: default
+    .active.lang-jp
+        background-image: url("/assets/images/btn_lang_jp_on.gif")
+    .active.lang-en
+        background-image: url("/assets/images/btn_lang_en_on.gif")
+  h1
+    a
+      display: block
+    position: relative
+    margin: 15px 0 40px 0
+    text-align: center
+    .aig-logo
+      position: absolute
+      left: 0
+      margin-top: -3px
+
+//====================
+// globalNav
+//====
+#globalNav
+  center($headerWidth)
+  min-width: $headerWidth
+  text-align: center
+  
+  li
+    position: relative
+    display: inline-block
+    padding: 0 19px 14px
+    transition: all .2s ease
+  li:hover
+    opacity: 0.7
+    
+  li.current:before
+    position: absolute
+    content: ''
+    display: block
+    bottom: 0
+    left: 50%
+    margin-left: -11.5px
+    width: 23px
+    height: 5px
+    background-color: $highLightColor
+    
+
+
+//====================
+// footer
+//====
+#footer
+  clear: both
+  margin: 0
+  #footerLink
+    center($footerLinkWidth)
+    overflow: hidden
+    p
+      font-size: 1.0em
+    ul
+      float: left
+    li
+      display: inline-block
+      overflow: hidden
+      a
+        display: block
+        padding: 20px 0
+        font-size: 1.0em
+        span
+          display: block
+          padding: 0 23px
+          height: 20px
+          line-height: 20px
+          border-left: solid 1px $baseGreyColor
+    .footer-copyright
+        text-align: center
+        height: 85px
+        line-height: 85px
+    
+  #pageTop
+    width: 100%
+    background-color: $pageTopBg
+    transition: all .2s ease
+    a
+      center($footerLinkWidth)
+      text-align: center
+  #pageTop:hover
+    background-color: $highLightColor
