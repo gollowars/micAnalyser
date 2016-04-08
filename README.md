@@ -1,6 +1,6 @@
 # micAnalyser
 
-Web audio Apiを使ってでマイクの音の解析の実験   
+Web audio Apiを使って、マイク音の解析実験   
 対応ブラウザ ([http://caniuse.com/#feat=stream](http://caniuse.com/#feat=stream))
 
 ## Required
